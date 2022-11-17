@@ -9,9 +9,6 @@ module.exports = function Layout({ children }) {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link type="image/x-icon" href="/favicon/favicon.ico" rel="shortcut icon" />
-        <link type="Image/x-icon" href="/favicon/favicon.ico" rel="icon" />
-        <link rel="stylesheet" href="/css/style.css" />
         <title>
           EasyForm
         </title>

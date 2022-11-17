@@ -1,10 +1,12 @@
 const addBtns = document.querySelectorAll('*[data-button-add]');
 const page = document.querySelector('.page')
 const creationForm = document.querySelectorAll('.create-form-form');
+const unikey = creationForm[0].id
+
 let counter = 0
 console.log(addBtns)
 for (let i = 0; i < addBtns.length; i++) {
-      addBtns[i].addEventListener('click', () => {
+      addBtns[i].addEventListener('click', (e) => {
         
         console.log(addBtns)
         const btnId = addBtns[i].getAttribute('id');
@@ -50,7 +52,7 @@ creationForm[j].addEventListener('submit', async (ev)=>{
   ev.preventDefault();
   counter=0
 
-  const response = await fetch('/createform', {
+  const response = await fetch(`/createform/${unikey}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

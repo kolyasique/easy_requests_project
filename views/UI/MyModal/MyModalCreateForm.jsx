@@ -12,15 +12,16 @@ module.exports = function ModalCreateForm({ formUniKey, site}) {
           <div className="close_modal_window">&times;</div>
         </div>
 
-        <form className="create-form-form" data-form-unikey={formUniKey.formUniKey} id={`form:${formUniKey.formUniKey}`}>
+        <form className="create-form-form" data-form-id id={formUniKey.formUniKey}>
         <p style={{'fontSize':'12px'}}>Добавьте нужное количество полей и выберите их тип</p>
        
-          <button type='button' id={formUniKey.formUniKey} name='add-select' data-button-add >+</button>
+          <button type='button' id={formUniKey.formUniKey} name='add-select' value={formUniKey.formUniKey} data-button-add >+</button>
          
           <button type='submit' id='submit-form-creation' name='submit-creation-form'>Создать</button>
 
-          <input name='site' className='new-input' value={site.title}></input>
-          <input name='title' className='new-input' placeholder='Добавьте название формы'></input>
+          <input name='site' className='new-input' value={site.title}/>
+          <input name='title' className='new-input' placeholder='Добавьте название формы'/>
+          <input name='unikey' className='new-input' style={{'display':'none'}} value={formUniKey.formUniKey}/>
         {/* <select className='new-input'>
         <option class='option' value='name'>Имя</option>
               <option class='option' value='phone'>Телефон</option>
