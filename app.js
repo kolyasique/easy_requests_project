@@ -15,6 +15,11 @@ const authErrorRouter = require('./routes/auth/authError');
 
 const app = express()
 
+// app.post('/sendform/:unikey', (req, res)=>{
+//     res.header('Access-Control-Allow-Origin', '*')
+//     res.json({hello:'mina'})
+//     const drf = renderTemplate(corsPage, null, res)
+// })
 
 app.use(morgan('dev'));
 app.use(cookieParser());

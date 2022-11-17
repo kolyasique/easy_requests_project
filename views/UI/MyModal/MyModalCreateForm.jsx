@@ -8,24 +8,28 @@ module.exports = function ModalCreateForm({ formUniKey, site}) {
       <div className="modal_content">
 
         <div className="modal_inner">
-          <div className="modal_title"> Конфигуратор форм {formUniKey.formUniKey}</div>
+          <div className="modal_title"> Конфигуратор форм для {site.title}</div>
           <div className="close_modal_window">&times;</div>
         </div>
 
-        <form className="create-form-form" data-form-unikey={formUniKey.formUniKey}>
+        <form className="create-form-form" data-form-unikey={formUniKey.formUniKey} id={`form:${formUniKey.formUniKey}`}>
         <p style={{'fontSize':'12px'}}>Добавьте нужное количество полей и выберите их тип</p>
-        
-        <select className='new-input'>
-        <option class='option' value='name'>Имя</option>
-//              <option class='option' value='phone'>Телефон</option>
-//              <option class='option' value='email'>E-mail</option>
-//              <option class='option' value='text'>Текстовое поле</option>
-//              <option class='option' value='file'>Файл</option>
-        </select>
+       
+          <button type='button' id={formUniKey.formUniKey} name='add-select' data-button-add >+</button>
+         
+          <button type='submit' id='submit-form-creation' name='submit-creation-form'>Создать</button>
 
-          <div>
-          <button id={`add-input-btn-${1}`}>+</button>
-          </div>
+          <input name='site' className='new-input' value={site.title}></input>
+          <input name='title' className='new-input' placeholder='Добавьте название формы'></input>
+        {/* <select className='new-input'>
+        <option class='option' value='name'>Имя</option>
+              <option class='option' value='phone'>Телефон</option>
+              <option class='option' value='email'>E-mail</option>
+              <option class='option' value='text'>Текстовое поле</option>
+              <option class='option' value='file'>Файл</option>
+        </select> */}
+
+         
           {/* <div className="empty-input" data-input-place="first">
             <p> Добавить поле</p>
             <button id="add-input-btn" data-button-add="first">+</button>
@@ -51,7 +55,6 @@ module.exports = function ModalCreateForm({ formUniKey, site}) {
             <button id="add-input-btn" data-button-add="fifth">+</button>
           </div> */}
 
-          <button type='submit' id='submit-form-creation' className='hidden'>Создать</button>
         </form>
       </div>
       <link rel="stylesheet" href="/css/UI/MyModal/MyModal.css" />

@@ -87,7 +87,7 @@
     height: 30px;
     margin-top: 38px;
     text-align: center;
-    width: 100%;
+    font-size: 24px;
 }
 .new-input{
     display: flex;
