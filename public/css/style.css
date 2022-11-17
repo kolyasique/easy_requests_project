@@ -12,7 +12,6 @@ background: radial-gradient(circle, rgba(251,255,250,1) 0%, rgba(233,238,230,0.6
 
   /* HEADER */
   #header-all{
-    background: #4f8579;
     width:100%;
     color: azure;
     padding: 10px;
@@ -21,7 +20,7 @@ background: radial-gradient(circle, rgba(251,255,250,1) 0%, rgba(233,238,230,0.6
     flex-direction: row;
     align-items: center;
     /* justify-content: flex-start; */
-    background-color: rgba(23, 67, 24, 0.9); 
+    background-color: rgba(255, 255, 255, 0.9); 
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     padding: 10px;
     justify-content: space-between
@@ -70,5 +69,52 @@ background: radial-gradient(circle, rgba(251,255,250,1) 0%, rgba(233,238,230,0.6
     color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     
+  }
+
+  /* MAIN CONTAINERS */
+  .page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .firstcontainer{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(60, 69, 63, 0.35);
+    border: 1px solid rgba(10, 52, 19, 0.354);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.487); 
+  }
+  /* .secondcontainer{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(47, 73, 56, 0.35);
+    border: 1px solid rgba(10, 52, 19, 0.354);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.487); 
+  } */
+  .sitecontainer{
+    width: 200px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(10, 52, 19, 0.354);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.487); 
   }
   

@@ -14,11 +14,11 @@ btns[i].addEventListener('click', () =>{
 })
 }
 
-window.onclick = function(e){
-    if(e.target.hasAttribute('data-modal-window')){
-        let modals = document.querySelectorAll("*[data-modal-window]")
-        for(let i = 0; i < modals.length; i++){
-            modals[i].style.display = "none"
-        }
-    }
-}
+// window.onclick = function(e){
+//     if(e.target.hasAttribute('data-modal-window')){
+//         let modals = document.querySelectorAll("*[data-modal-window]")
+//         for(let i = 0; i < modals.length; i++){
+//             modals[i].style.display = "none"
+//         }
+//     }
+// }

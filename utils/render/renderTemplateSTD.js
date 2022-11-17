@@ -1,3 +1,4 @@
+/* eslint-disable default-param-last */
 const ReactDOMServer = require('react-dom/server');
 const React = require('react');
 
